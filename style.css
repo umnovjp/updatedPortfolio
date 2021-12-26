@@ -36,7 +36,7 @@ color: gray
 
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 17%;
   position: fixed;
   z-index: 1;
   top: 100px;
@@ -44,22 +44,52 @@ color: gray
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
+  display: flex-shrink;
+  flex: ;
+  order: 3;
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 6px 1px 6px 6px;
   text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
+  font-size: 16px;
+  color: #afaeae;
+  display: flex-shrink;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
+.sidenav img:hover {
+  box-shadow: 5px 5px 3px rgb(234, 0, 255);
+}
+
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-left: 17%; /* Same as the width of the sidenav */
   font-size: 14px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+  display: flex-grow;
 }
+
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  main,
+  sidenav {
+    flex-direction: column;
+  }
+  /* Make the sidebar stack below the body */
+  aside {
+    order: 2;
+  }
+  /* Change the header background */
+  header {
+    background: #772014;
+  }
+  /* Change the navbar and footer background */
+  nav,
+  footer {
+    background-color: #bb8588;
+  }
+}
+
