@@ -5,6 +5,8 @@
 <head class='header'>
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
 
@@ -17,37 +19,97 @@
   </header>
 
   <p> </p>
-  <script></script>
+
   <div class="sidenav">
+    <div class='sidenavInner'>
     <h2>Contact me</h2>
     <a>📱 214-293-9250</a><br>
     <a href="mailto:umnovjp@yahoo.com">📧 Email me</a>
-    <h2>Links</h2>
-    <a href="https://www.github.com/umnovjp"><img src="./assets/GitHubCat.png" alt="GitHub Logo" width="40"
-        height="40"></a><br>
+</div>
+<div class='sidenavInner'>
+<h2>Links</h2>
+    <a href="https://www.github.com/umnovjp"><img src="./assets/GitHubCat.png" alt="GitHub Logo" width="38.5"
+        height="38.5"></a>
     <a href="https://www.linkedin.com/in/alexanderumnov/"><img src="./assets/LinkedIn_logo_initials.png" alt="LinkedIn Logo"
-        width="40" height="40"></a>
+        width="38.5" height="38.5"></a>
+    </div>    
+    <div class='sidenavInner'>
     <h2>Resume</h2>
-    <a href='./assets/Alexander_Github.pdf'>🕮</a>
+    <a href='./assets/Alexander_Github.pdf'><span class = 'book'>🕮</span></a>
+</div>
   </div>
 
   <div class="main">
+<p>Click on the buttons inside the tabbed menu:</p>
 
-    <p class='parTitle'>My Recent Projects All Graded A or A+</p><br>
-    <br>
-    <a class='listItem' href="https://github.com/umnovjp/ORM">E-Commerce Back End</a><br>
-    <a class='listItem' href="https://onedrive.live.com/?authkey=%21ADPrXj6LsUGpsdo&id=E3BDDD59931E705%21562&cid=0E3BDDD59931E705">E-Commerce Back End Video Demo Titled ORM_Demo3</a><br>
-    <img src="./assets/EcommerceVideoDemo.png" alt="Ecommerce Video Demo" width = 80%><br>
-    <a class='listItem' href="https://github.com/umnovjp/Work_Day_Scheduler">Work Day Scheduler</a><br>
-    <a class='listItem' href="https://umnovjp.github.io/Work_Day_Scheduler/">Work Day Scheduler Live</a><br>
-    <img src="./assets/WorkDayLive.png" alt="WorkDay Scheduler Live Page" width = 80%><br><br>
-    <a class='listItem' href="https://github.com/umnovjp/FitnessXpress">Fitness Tracker</a><br>
-    <a class='listItem' href="https://murmuring-spire-84992.herokuapp.com/">Fitness Tracker Live</a><br>
-    <img src="./assets/Fitness_Live.png" alt="Fitness Live Page" width = 80%><br>
-    <a class='listItem' href="https://github.com/umnovjp/WeatherReport">Weather Report</a><br>
-    <img src="./assets/Weather_Screenshot.png" alt="Weather Forecast Demo" width = 80%><br>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'AboutMe')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'MyProjects')">My Projects</button>
+  <!--for future use<button class="tablinks" onclick="openCity(event, 'Tokyo')">To Delete</button>-->
+</div>
 
-  </div>
+<div id="AboutMe" class="tabcontent">
+    <img src="./assets/Face.png" alt="My Photo" width = 250px><br>
+    <p class='parTitle'>About Me</p><br>
+    <a class='listItem'>Full Stack Developer</a><br>
+    
+    <p>Professional experience covering HTML, JavaScript, mySQL and noSQL databases, running 
+        server-based web apps with technologies like node.js, express.js, react.js, web API. Expertise developing apps using React and MERN.</p>
+    <a class='listItem'>More Skills That Make Me Different</a><br>
+    <p>Over twenty years of experience in industry with great expertise in system design, integration, manufacturing. Born to solve complex engineering problems involving electronics, firmware, coding, software and present solutions 
+        to customers in simple terms. More than 200 system prototypes for data communication, medical devices, 
+        automotive industry assembled hands on from proof-of-concept to commercial product levels. </p>
+    <a class='listItem'>Major Accomplishments</a><br>
+    <p>✯ Program Management Certification</p>
+    <p>✯ Voting member, Ethernet Standards Committee (2006-2020) influencing direction this $200B / year industry takes with technical contributions in industrial automation, data center, automotive ares</p>
+<p>✯ Six Sigma Green Belt</p>
+<p>✯ Great experience in lab test automation with python pyvisa and tkinter</p>
+</div>
+
+<div id="MyProjects" class="tabcontent">
+
+  <p class='parTitle'>My Recent Projects</p><br>
+        <br>
+        <a class='listItem' href="https://github.com/umnovjp/everNegativeBudget/">Budget Tracker Github</a><br>
+        <p>This app allows user with or without network connection to enter expenses and withdrawals. Transaction is shown on the page even if there is no connection. Transaction is added to database when a user is back online. MongoDB noSQL platform was used to record data in a database along with its ODM (object data modeling) library called mongoose. Express.js was used to run app on a server. </p>
+        <a class='listItem' href="https://nameless-brushlands-27009.herokuapp.com/">Budget Tracker at Heroku</a><br>
+        <img src="./assets/BudgetTracker.png" alt="Budget Tracker Heroku Page" width = 50%><br>
+        <a class='listItem' href="https://github.com/umnovjp/ORM">E-Commerce Back End Github</a><br>
+        <p>This app will help a manager of an Internet retail company to track stock, products categories, prices, and tags. The app speciies many GET, POST, DELETE, PUT routes. mySQL database used to store data. </p>
+        <a class='listItem' href="https://onedrive.live.com/?authkey=%21ADPrXj6LsUGpsdo&id=E3BDDD59931E705%21562&cid=0E3BDDD59931E705">E-Commerce Back End Video Demo Titled ORM_Demo3</a><br>
+        <img src="./assets/EcommerceVideoDemo.png" alt="Ecommerce Video Demo" width = 50%><br>
+        <a class='listItem' href="https://github.com/umnovjp/Work_Day_Scheduler">Work Day Scheduler Github</a><br>
+        <a class='listItem' href="https://umnovjp.github.io/Work_Day_Scheduler/">Work Day Scheduler Live</a><br>
+        <img src="./assets/WorkDayLive.png" alt="WorkDay Scheduler Live Page" width = 50%><br><br>
+        <a class='listItem' href="https://github.com/umnovjp/FitnessXpress">Fitness Tracker Github</a><br>
+        <a class='listItem' href="https://murmuring-spire-84992.herokuapp.com/">Fitness Tracker at Heroku</a><br>
+        <img src="./assets/Fitness_Live.png" alt="Fitness Live Page" width = 50%><br>
+      </div>
+
+</div>
+
+<!--for future use <div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>-->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
 
 </body>
 
